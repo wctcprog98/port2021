@@ -30,6 +30,11 @@ h1,
   text-align: center;
 }
 
+#hero {
+    font-size: 1.5em;
+    color: white;
+}
+
 button {
   padding: 0.5em 1.25em;
   border-radius: 20px;
@@ -115,8 +120,6 @@ button:hover {
   object-fit: cover;
   max-height: 75px;
   margin-bottom: 1em;
-  text-align: center;
-  flex-grow: 0.5;
   color: #7510f7;
 }
 .nav-list {
@@ -204,8 +207,12 @@ footer {
         justify-content: flex-end;
     }
 
-    .logo {
+    .nav-list img {
         align-self: flex-start;
+    }
+
+    .logo {
+         flex-grow: 0.5;
     }
   }
 
@@ -219,5 +226,9 @@ footer {
   @media screen and (min-width: 1000px) {
     .cell {
       width: calc(33.3333% - 2rem);
+    }
+
+    .logo {
+         flex-grow: 0.5;
     }
   }
