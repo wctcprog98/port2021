@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nenye's Portfolio Website</title>
-    <script defer="defer" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -13,10 +14,9 @@
 
 <body>
     <header>
-        <div class="container container-flex">
+            <img src="images/VmQnHq7801.svg" class="logo" alt="my logo">
             <nav>
                 <ul class="nav-list">
-                    <img src="images/VmQnHq7801.svg" class="logo" alt="my logo">
                     <li class="nav-list-item"><a class="nav-link" href="#home" alt="">home</a></li>
                     <li class="nav-list-item"><a class="nav-link" href="#about" alt="">about me</a></li>
                     <li class="nav-list-item"><a class="nav-link" href="#skils" alt="">skills</a></li>
@@ -24,7 +24,6 @@
                     <li class="nav-list-item"><button class="nav-link" href="#contact" alt="">say hello</button></li>
                 </ul>
             </nav>
-        </div>
     </header>
 
     <div class="container container-flex">
@@ -57,61 +56,88 @@
         <img src="images/computer graphic.svg" class="computer-image" alt="picture of computer and components">
 
     </div>
+
+    <div class="grid" id="skills">
+        <div class="cell cell-skills">
+            <i class="fas fa-2x fa-pencil-ruler spacing"></i>
+            <h2>Design</h2>
+            <p>I specialize in front-end design and love fine tuning a great layout. I have worked with Bootstrap, and other front-end frameworks.</p>
+        </div>
+
+        <div class="cell cell-skills">
+            <i class="fas fa-2x fa-desktop spacing"></i>
+            <h2>Front End Development</h2>
+            <p>I am trained in HTML5, JavaScript, CSS3, jQuery, and ot. I
+                have also explored and deployed live working websites on Wordpress along with Heroku.</p>
+        </div>
+
+        <div class="cell cell-skills">
+            <i class="fas fa-2x fa-laptop-code spacing"></i>
+            <h2>Full Stack Development</h2>
+            <p>I am trained in nodeJS, MySQL, Express, mongoDB, firebase. I have built databases
+                with mySQL and Firebase along with performing SQL queries. I am also experienced in setting up 
+                server connections and routing.</p>
+        </div>
+    </div>
+
+
     <section class="img-container">
         <div class="grid">
             <div class="cell">
-                <img src="images/diceGame.png" id="projects" alt="">
+                <a href=""><img src="images/diceGame.png" id="projects" alt=""></a>
             </div>
             <div class="cell">
-                <img src="images/tesla.PNG" id="projects" alt="">
+                <a href="">   <img src="images/tesla.PNG" id="projects" alt=""></a>
             </div>
             <div class="cell">
-                <img src="images/diceGame.png" id="projects" alt="">
+                <a href=""><img src="images/diceGame.png" id="projects" alt=""></a>
             </div>
             <div class="cell">
-                <img src="images/Emoji-site.png" id="projects" alt="">
+                <a href=""><img src="images/Emoji-site.png" id="projects" alt=""></a>
             </div>
             <div class="cell">
-                <img src="images/broke-App.png" id="projects" alt="">
+                <a href=""><img src="images/broke-App.png" id="projects" alt=""></a>
             </div>
             <div class="cell">
-                <img src="images/simple-life-blog copy.png" id="projects" alt="">
+                <a href=""><img src="images/simple-life-blog copy.png" id="projects" alt=""></a>
             </div>
         </div>
         </div>
     </section>
 
-    <!-- <footer id="footer">
-            <ul>
+    <footer id="footer">
+            <ul class="social-icon-list">
                 <li>
                     <a class="social-icon-item" href="https://github.com/wctcprog98">
-                        <i class="fab fa-3x fa-github" id="icon-color"></i>
+                        <i class="fab fa-2x fa-github animate__animated animate__bounce"></i>
                     </a>
                 </li>
 
                 <li>
                     <a class="social-icon-item" href="https://www.linkedin.com/in/nenyediei">
-                        <i class="fab fa-3x fa-linkedin"></i>
+                        <i class="fab fa-2x fa-linkedin-in animate__animated animate__bounce"></i>
                     </a>
                 </li>
 
                 <li>
                     <a class="social-icon-item" href="https://codepen.io/wctcprog98">
-                        <i class="fas fa-3x fa-envelope-square"></i>
+                        <i class="fas fa-2x fa-envelope-square animate__animated animate__bounce"></i>
                     </a></li>
 
                 <li> <a class="social-icon-item" href="https://codepen.io/wctcprog98">
-                        <i class="far fa-3x fa-file-word"></i>
+                        <i class="far fa-2x fa-file-word animate__animated animate__bounce"></i>
                     </a></li>
                 </li>
 
                 <li> <a class="social-icon-item" href="https://codepen.io/wctcprog98">
-                        <i class="fab fa-3x fa-codepen"></i>
+                        <i class="fab fa-2x fa-codepen animate__animated animate__bounce" id="bounce"></i>
                     </a>
             </ul> 
             <p class="copyright">Made by Nenye Diei @ 2020</p>
-            <img src="images/VmQnHq7801.svg" class="footer-logo" alt="">
-        </footer> -->
+            <div class="footer-logo">
+                <img src="images/VmQnHq7801.svg" alt="company logo">
+            </div>
+        </footer>
 
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
