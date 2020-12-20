@@ -15,6 +15,13 @@ img {
   max-width: 100%;
 }
 
+img:hover,
+img:focus,
+a:hover,
+a:focus {
+    outline: none;
+}
+
 /* Typography */
 h1,
 h2,
@@ -24,11 +31,23 @@ h3 {
   margin-top: 0;
 }
 
+h3 {
+    color: #7510f7;
+}
+
 header {
     margin: 0;
     padding: 0;
 }
 
+ul {
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
 h1,
 .subtitle{
   text-align: center;
@@ -63,18 +82,28 @@ section {
 button {
     margin-bottom: 0em;
 }
-button:hover {
+button:hover,
+button:focus {
   background: #7510f7;
   color: white;
+  cursor: pointer;
 }
 
 .title {
   margin-bottom: 0.5em;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .subtitle {
-  margin-top: 0;
-}
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 0;
+    padding: 0 1em;
+  }
 
 .container-flex {
   display: flex;
@@ -117,7 +146,8 @@ button:hover {
     width: 750px;
     margin: 0 auto;
     max-width: 100%;
-    padding: 2em 0;
+    padding-bottom: 5em;
+    padding-top: 1em;
 }
 
 .nav-link:hover,
@@ -141,7 +171,6 @@ header {
 
 .nav-list-item {
   list-style: none;
-  margin-left: 2em;
   padding: .5em;
 }
 
@@ -149,13 +178,13 @@ header {
 
 #skills {
     margin: 0 auto;
-    margin-top: -150px;
+    margin-top: -100px;
     border-radius: 1.5em;
     position: relative;
     z-index: 1;
     background-color: white; 
     border: 1px solid #7510f7; 
-    max-width: 1200px;
+    max-width: 95%;
 }
 .cell {
     margin: 1rem;
@@ -176,7 +205,17 @@ header {
   }
 
   .spacing {
-      padding: 1.5em 0;
+      padding: 1.5em 1em;
+  }
+
+  .skills-list {
+       text-align: center;
+       padding-top: 0;
+  }
+
+  .skills-list-item {
+      padding: 1em 0;
+      list-style: none;
   }
 /* projects */
 
@@ -274,6 +313,11 @@ header {
     margin-bottom: 0;
     padding-bottom: 0;
     }
+
+    #skills {
+        max-width: 89%;
+    }
+
   }
 
   /* change width of cells and factor in padding */
@@ -285,6 +329,7 @@ header {
     .cell-skills {
         border-bottom: none;
     }
+
   }
   
   @media screen and (min-width: 1000px) {
