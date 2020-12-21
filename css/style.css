@@ -174,6 +174,7 @@ button:focus {
   color: #7510f7;
 }
 
+
 #about {
   width: 850px;
   font-size: 1.25em;
@@ -214,12 +215,11 @@ button:focus {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .cell {
-  text-align: center;
-  padding: 1em;
+  padding: .5em;
 }
 
 .cell-skills * {
@@ -231,19 +231,11 @@ button:focus {
 }
 
 .cell-skills {
-  text-align: center;
-}
-
-.cell-skills {
   border-bottom: 1px solid #7510f7;
 }
 
 .cell-skills:last-child {
   border-bottom: none;
-}
-
-.skills-list {
-  text-align: center;
 }
 
 .skills-list-item {
@@ -259,7 +251,7 @@ button:focus {
 
 #projects {
   width: 100%;
-  height: 400px;
+  height: 300px;
   order: 1;
   border: 1px solid #7510f7;
   border-radius: 1.25em;
@@ -276,16 +268,18 @@ button:focus {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0;
+  margin: 0;
+  object-fit: cover;
 }
 
-.icon-space {
+/* .icon-space {
   margin-left: .5em;
+} */
+
+.social-icon-item:first-child {
+  margin-left: 0;
 }
 
-.social-icon-list {
-  padding: 0 em;
-}
 #projects:hover,
 #projects:focus {
   background: #7510f7;
@@ -317,7 +311,7 @@ button:focus {
   }
 
   .cell {
-    width: 43%;
+    width: 40%;
   }
 
   .cell-skills:last-child {
@@ -332,4 +326,47 @@ button:focus {
   .cell-skills:first-child {
     border-right: 1px solid #7510f7;
   }
+
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px){
+.cell {
+  max-width: 30%;
+}
+  .cell-skills {
+    max-width: 30%;
+  }
+
+  .cell-skills:nth-child(2) {
+    border-right: 1px solid #7510f7;
+  }
+
+  .cell-skills:last-child {
+    border-top: none;
+  }
+
+  .nav-list {
+    max-width: 50%;
+  }
+
+  .nav,
+  .nav-list {
+    flex-direction: row;
+  }
+  .nav{
+    justify-content: space-between;
+  }
+
+  #logo {
+    margin-left: 1em;
+  }
+  
 }
