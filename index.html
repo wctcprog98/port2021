@@ -7,41 +7,46 @@
     <title>Nenye's Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="images/logo1.png" class="logo" alt="my logo">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-link" href="#home" alt="">home</a></li>
-                <li class="nav-list-item"><a class="nav-link" href="#about" alt="">about me</a></li>
-                <li class="nav-list-item"><a class="nav-link" href="#skills" alt="">skills</a></li>
-                <li class="nav-list-item"><a class="nav-link" href="#projects" alt="">projects</a></li>
-                <li class="nav-list-item"><a href="contact.html"><button class="nav-link" alt="">say hello</button></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="nav">
+        <img src="images/logo1.png" alt="">
+        <div class="nav-list">
+            <a class="nav-link" href="#home" alt="">home</a>
+            <a class="nav-link" href="#about" alt="">about me</a>
+            <a class="nav-link" href="#skills" alt="">skills</a>
+            <a class="nav-link" href="#projects" alt="">projects</a>
+            <a href="contact.html"><button class="nav-link" alt="">say hello</button></a>
+        </div>
+    </div>
 
     <div class="container container-flex">
         <h1>Designer, Front-end Developer & Coding Ninja</h1>
         <p class="subtitle">I design and code beautifully simple things, and I love what I
             do.</p>
 
-        <p id="hero"></p>
         <article class="content">
             <p class="title">Hello, my name is Nenye</p>
-            <p id="about">I have been interested in coding and programming for well over 10 years. I began by debuggging and fixing computers and
-                eventually graduated from that to taking laptops and desktops apart. Something about taking things apart, seeing how they work, and 
-                usaully putting them back together correctly was always fascinating to me; however my career started in a different industry all together.
-                I graduated from college with a B.S. in Marketing and enjoyed a fulfilling career. Deep down I always had a passion for coding and I 
-                began taking online courses. From there I have had a combination of online and in classroom teaching that gave me a lot of exposure and
-                practice developing and designing websites, appilcations and games. Now I spend most of my days learning new programming languages or 
-                techniques so that I can continue grow and become a stronger programmer. 
+            <p id="about">I have been interested in coding and programming for well over 10 years. I began by debuggging
+                and fixing computers and
+                eventually graduated from that to taking laptops and desktops apart. Something about taking things
+                apart, seeing how they work, and
+                usaully putting them back together correctly was always fascinating to me; however my career started in
+                a different industry all together.
+                I graduated from college with a B.S. in Marketing and enjoyed a fulfilling career. Deep down I always
+                had a passion for coding and I
+                began taking online courses. From there I have had a combination of online and in classroom teaching
+                that gave me a lot of exposure and
+                practice developing and designing websites, appilcations and games. Now I spend most of my days learning
+                new programming languages or
+                techniques so that I can continue grow and become a stronger programmer.
             </p>
         </article>
 
@@ -52,111 +57,117 @@
 
     <div class="grid" id="skills">
         <div class="cell cell-skills">
-            <i class="fas fa-2x fa-pencil-ruler spacing"></i>
+            <i class="fas fa-2x fa-pencil-ruler spacing blue"></i>
             <h2>Design</h2>
             <p>I specialize in front-end design and love fine tuning a great layout. I have worked with Bootstrap, and
                 other front-end frameworks.</p>
-                <br>
-                <h3>Things I love to design</h3>
-                <p>I love to design interactive websites, games, applications and mobile first repsonsive websites.</p>
-                <h3>Design Tools</h3>
-                <ul class="skills-list">
-                    <li class="skills-list-item">Paint</li>
-                    <li class="skills-list-item">Adobe XD</li>
-                    <li class="skills-list-item">Photoshop</li>
-                    <li class="skills-list-item">Unsplash</li>
-                    <li class="skills-list-item">Google Fonts</li>
-                    <li class="skills-list-item">Font Awesome</li>
-                    <li class="skills-list-item">Sketch</li>
-                </ul>
+            <h3>Things I love to design:</h3>
+            <p>I love to design games, applications and mobile-first repsonsive websites.</p>
+            <h3>Design Tools</h3>
+            <ul class="skills-list">
+                <li class="skills-list-item">Paint</li>
+                <li class="skills-list-item">Adobe XD</li>
+                <li class="skills-list-item">Photoshop</li>
+                <li class="skills-list-item">Unsplash</li>
+                <li class="skills-list-item">Google Fonts</li>
+                <li class="skills-list-item">Font Awesome</li>
+                <li class="skills-list-item">Sketch</li>
+            </ul>
         </div>
-    
+
         <div class="cell cell-skills">
-            <i class="fas fa-2x fa-desktop spacing"></i>
+            <i class="fas fa-2x fa-desktop spacing blue"></i>
             <h2>Front End Dev</h2>
             <p>I am trained in HTML5, JavaScript, CSS3, and jQuery. I
                 have also explored and deployed live working websites on Wordpress along with Heroku
             </p>
-            <h3>Design Tools</h3>
+            <h3>Languages I speak:</h3>
             <p>HTML, CSS, Sass, React, JavaScript, jQuery</p>
             <h3>Dev Tools</h3>
             <ul class="skills-list">
                 <li class="skills-list-item">BootStrap</li>
                 <li class="skills-list-item">Terminal</li>
-                <li class="skills-list-item">Github</li>
-                <li class="skills-list-item">Gitlab</li>
+                <li class="skills-list-item">Github/Gitlab</li>
                 <li class="skills-list-item">Visual Studio</li>
                 <li class="skills-list-item">Scrimba</li>
                 <li class="skills-list-item">Codepen</li>
                 <li class="skills-list-item">Bulma</li>
-                <li class="skills-list-item">Foundation</li>
-                <li class="skills-list-item">Slack</li>
             </ul>
         </div>
 
         <div class="cell cell-skills">
-            <i class="fas fa-2x fa-laptop-code spacing"></i>
+            <i class="fas fa-2x fa-laptop-code spacing blue"></i>
             <h2>Full Stack Development</h2>
-            <p>I am trained in nodeJS, MySQL, Express, mongoDB, firebase. I have built databases
-                with mySQL and Firebase along with performing SQL queries.
+            <p>I am trained in nodeJS, MySQL, Express, mongoDB, firebase. I have also have experience
+                building databases with Firebase and mySQL.
             </p>
-            <h3>Stats</h3>
-            <p>3 immersive front-end bootcamps, 3 certificates, 10 front-end badges.</p>
+            <h3>Achievements:</h3>
+            <ul class="skills-list">
+                <li class="skills-list-item">8000+ hours of courses/classes</li>
+                <li class="skills-list-item">2 Front End immersive Bootcamps</li>
+                <li class="skills-list-item">1 Full Stack BootCamp</li>
+                <li class="skills-list-item">Full Stack Developer Certifition</li>
+                <li class="skills-list-item">Front End Developer Certification</li>
+                <li class="skills-list-item">Responsive Web Design Certification</li>
+            </ul>
         </div>
     </div>
 
-
-    <section class="img-container">
-        <h2 class="subtitle">My Recent Work</h2>
-        <div class="grid">
-            <div class="cell">
-                <a href=""><img src="images/diceGame.png" id="projects" alt=""></a>
-            </div>
-            <div class="cell">
-                <a href=""> <img src="images/tesla.PNG" id="projects" alt=""></a>
-            </div>
-            <div class="cell">
-                <a href=""><img src="images/diceGame.png" id="projects" alt=""></a>
-            </div>
-            <div class="cell">
-                <a href=""><img src="images/Emoji-site.png" id="projects" alt=""></a>
-            </div>
-            <div class="cell">
-                <a href=""><img src="images/broke-App.png" id="projects" alt=""></a>
-            </div>
-            <div class="cell">
-                <a href=""><img src="images/simple-life-blog copy.png" id="projects" alt=""></a>
-            </div>
+    <h2 class="title">My Recent Work</h2>
+    <article class="subtitle">Here are a few projects I have completed recently.</article>
+    <div class="grid">
+        <div class="cell">
+            <a href=""><img src="images/diceGame.png" id="projects" alt=""></a>
         </div>
+        <div class="cell">
+            <a href=""> <img src="images/tesla.PNG" id="projects" alt=""></a>
         </div>
-    </section>
+        <div class="cell">
+            <a href=""><img src="images/diceGame.png" id="projects" alt=""></a>
+        </div>
+        <div class="cell">
+            <a href=""><img src="images/Emoji-site.png" id="projects" alt=""></a>
+        </div>
+        <div class="cell">
+            <a href=""><img src="images/broke-App.png" id="projects" alt=""></a>
+        </div>
+        <div class="cell">
+            <a href=""><img src="images/simple-life-blog copy.png" id="projects" alt=""></a>
+        </div>
+    </div>
 
+            <a href="https://github.com/wctcprog98" class="icon-btn">
+                <i class="fab fa-lg fa-github">
+                    See more on Github</i>
+                </a>
+   
     <footer id="footer">
         <ul class="social-icon-list">
             <li>
                 <a class="social-icon-item" href="https://github.com/wctcprog98">
-                    <i class="fab fa-2x fa-github animate__animated animate__bounce"></i>
+                    <i class="fab fa-2x fa-github icon-space"></i>
                 </a>
             </li>
 
             <li>
                 <a class="social-icon-item" href="https://www.linkedin.com/in/nenyediei">
-                    <i class="fab fa-2x fa-linkedin-in animate__animated animate__bounce"></i>
+                    <i class="fab fa-2x fa-linkedin-in icon-space"></i>
                 </a>
             </li>
 
             <li>
                 <a class="social-icon-item" href="https://codepen.io/wctcprog98">
-                    <i class="fas fa-2x fa-envelope-square animate__animated animate__bounce"></i>
-                </a></li>
+                    <i class="fas fa-2x fa-envelope-square icon-space"></i>
+                </a>
+            </li>
 
             <li> <a class="social-icon-item" href="https://codepen.io/wctcprog98">
-                    <i class="far fa-2x fa-file-word animate__animated animate__bounce"></i>
+                    <i class="far fa-2x fa-file-word icon-space"></i>
                 </a></li>
             </li>
 
             <li> <a class="social-icon-item" href="https://codepen.io/wctcprog98">
-                    <i class="fab fa-2x fa-codepen animate__animated animate__bounce" id="bounce"></i>
+                    <i class="fab fa-2x fa-codepen icon-space" id="bounce"></i>
                 </a>
         </ul>
         <p class="copyright">Made by Nenye Diei @ 2020</p>

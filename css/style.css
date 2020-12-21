@@ -3,23 +3,29 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
+  text-align: center;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 img:hover,
 img:focus,
 a:hover,
 a:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Typography */
@@ -32,35 +38,26 @@ h3 {
 }
 
 h3 {
-    color: #7510f7;
-}
-
-header {
-    margin: 0;
-    padding: 0;
+  color: #7510f7;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
 }
 h1,
-.subtitle{
+.subtitle {
   text-align: center;
-}
-
-#hero {
-    font-size: 1.5em;
-    color: white;
 }
 
 button {
   padding: 0.5em 1.25em;
-  border-radius: 20px;
+  border-radius: 1.25em;
   background: transparent;
   font-weight: 700;
   border-color: #7510f7;
@@ -69,7 +66,7 @@ button {
 }
 
 section {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -80,7 +77,7 @@ section {
 }
 
 button {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 button:hover,
 button:focus {
@@ -89,21 +86,41 @@ button:focus {
   cursor: pointer;
 }
 
+.blue {
+  color: #7510f7;
+}
+
+.icon-btn {
+  border: 2px solid #7510f7;
+  padding: .75em 1.5em;
+  border-radius: 2em;
+  color: #7510f7;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+}
+
+.icon-btn:hover,
+.icon-btn:focus {
+  background: #7510f7;
+  color: white;
+}
+
 .title {
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-bottom: 0.5em;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
   text-align: center;
 }
 
 .subtitle {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: bolder;
-    line-height: 1.5;
-    font-size: 20px;
-    margin-top: 0;
-    padding: 0 1em;
-  }
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-top: 0;
+  padding: 0 1em;
+}
 
 .container-flex {
   display: flex;
@@ -119,7 +136,7 @@ button:focus {
 }
 
 .avatar-image {
-  border-radius: 50%;
+  border-radius: 8em;
   margin: 0 auto;
   order: -1;
   margin-bottom: 1.5em;
@@ -128,31 +145,49 @@ button:focus {
 
 /* Navigation */
 
-.logo {
-  object-fit: cover;
-  max-height: 75px;
-  margin-bottom: 1em;
-  color: #7510f7;
+.nav {
+  margin: 0 0 2em 0;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #7510f7;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* margin: 1em; */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.25rem;
+  margin: 0.75em;
   color: #7510f7;
 }
 
 #about {
-    width: 750px;
-    margin: 0 auto;
-    max-width: 100%;
-    padding-bottom: 5em;
-    padding-top: 1em;
+  width: 850px;
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+  padding-bottom: 5em;
+  padding-top: 1em;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  border-bottom: 1px solid #7510f7;
+  border-bottom: 2px solid #7510f7;
 }
 
 .nav-link:focus:last-child,
@@ -160,79 +195,75 @@ button:focus {
   border-bottom: 2px solid #7510f7;
 }
 
-header {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid #7510f7;
-    margin-bottom: 2em;
-  }
-
-.nav-list-item {
-  list-style: none;
-  padding: .5em;
-}
-
 /* skills */
 
 #skills {
-    margin: 0 auto;
-    margin-top: -100px;
-    border-radius: 1.5em;
-    position: relative;
-    z-index: 1;
-    background-color: white; 
-    border: 1px solid #7510f7; 
-    max-width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  margin-top: -100px;
+  border-radius: 1.5em;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #7510f7;
 }
+
+.grid {
+  margin-bottom: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .cell {
-    margin: 1rem;
+  text-align: center;
+  padding: 1em;
+}
+
+.cell-skills * {
+  padding: 0 1em;
+}
+
+.cell p {
+  line-height: 1.5;
 }
 
 .cell-skills {
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-  }
+  text-align: center;
+}
 
-  .cell-skills {
-      border-bottom: 1px solid #7510f7;
-  }
+.cell-skills {
+  border-bottom: 1px solid #7510f7;
+}
 
-  .cell-skills:last-child {
-      border-bottom: none;
-  }
+.cell-skills:last-child {
+  border-bottom: none;
+}
 
-  .spacing {
-      padding: 1.5em 1em;
-  }
+.skills-list {
+  text-align: center;
+}
 
-  .skills-list {
-       text-align: center;
-       padding-top: 0;
-  }
+.skills-list-item {
+  list-style: none;
+  padding: 0.5em 0;
+}
 
-  .skills-list-item {
-      padding: 1em 0;
-      list-style: none;
-  }
+.spacing {
+  padding: 1.25em;
+}
 /* projects */
+
 
 #projects {
   width: 100%;
-  object-fit: cover;
-  height: 250px;
-  margin-bottom: 1em;
+  height: 400px;
   order: 1;
   border: 1px solid #7510f7;
-  border-radius: 20px;
-}
-
-.img-container {
-    margin: 0 auto;
-    max-width: 1230px;
-    
+  border-radius: 1.25em;
+  object-fit: cover;
 }
 
 .computer-image {
@@ -240,110 +271,65 @@ header {
 }
 
 .social-icon-list,
-.copyright, 
+.copyright,
 .footer-logo {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0; 
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.icon-space {
+  margin-left: .5em;
 }
 
 .social-icon-list {
-    padding: 0 em;
+  padding: 0 em;
 }
-#projects:hover {
-    background: #7510f7;
+#projects:hover,
+#projects:focus {
+  background: #7510f7;
 }
 
 #footer {
   background: #7510f7;
   padding-top: 1.5em;
   text-align: center;
+  margin-top: 4em;
 }
 
 /* Animation */
-.social-icon-item:hover {
-    margin: 0 0.5rem;
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 1s; /* don't forget to set a duration! */
-    color: white; 
-  }
-
-/* tablet */
-@media screen and (min-width: 600px) {
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-    }
-
-    .cell {
-      width: 50%;
-    }
-
-    #logo {
-        margin-right: auto;
-        max-height: 100px;
-        max-width: 35%;
-        object-fit: cover;
-    }
-
-    header {
-        padding-right: 1.5em;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-  }
-
-  /* desktop */
-  @media screen and (min-width: 1000px) {
-   
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    #logo {
-    margin-right: auto;
-    max-width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    }
-
-    #skills {
-        max-width: 89%;
-    }
-
-  }
-
-  /* change width of cells and factor in padding */
-  @media screen and (min-width: 600px) {
-    .cell {
-      width: calc(50% - 2rem);
-    }
-
-    .cell-skills {
-        border-bottom: none;
-    }
-
-  }
-  
-  @media screen and (min-width: 1000px) {
-    .cell {
-      width: calc(33.3333% - 2rem);
-    }
-
-    .cell-skills {
-        border-bottom: none;
-    }
-
-    .cell-skills:nth-child(2) {
-        border-right: 1px solid #7510f7;
-         border-left: 1px solid #7510f7;
-    }
+.social-icon-item:hover,
+.social-icon-item:focus {
+  margin: 0 0.5rem;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  color: white;
 }
-  
+
+/* media queries */
+
+/* min 600px change to two colums */
+
+@media (min-width: 600px) {
+  .grid {
+    flex-flow: row wrap;
+  }
+
+  .cell {
+    width: 43%;
+  }
+
+  .cell-skills:last-child {
+    border-top: 1px solid #7510f7;
+    width: 100%;
+  }
+
+  .cell-skills {
+    border-bottom: none;
+  }
+
+  .cell-skills:first-child {
+    border-right: 1px solid #7510f7;
+  }
+}
