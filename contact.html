@@ -2,44 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/helpers.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="nav">
-    <h1 class="title">The Navbar</h1>
-    <div class="links">
-      <a class="link link-selected" href="#">Home</a>
-      <a class="link" href="#">About Us</a>
-      <a class="link" href="#">Services</a>
-      <a class="link" href="#">Contact Us</a>
+  <section class="section" id="projects">
+    <h1 class="title center">My Projects</h1>
+        <div class="columns center">
+                <div class="container">
+        <img src="images/Emoji-site.png" alt="Tesla Roadster" class="img-image">
+        <div class="overlay">
+          <div class="text">Hello World
+              <a class="button is-outlined is-rounded is-link">Visit site ></a>
+          </div>
+          
+        </div>
+      </div>
+        <div class="container">
+            <img src="images/broke-App.png" alt="How broke are you app?" class="img-image">
+            <div class="overlay">
+                <div class="text">Hello World
+                    <a class="button is-outlined is-rounded is-link">Visit site ></a>
+                </div>
+                
+              </div>
+          </div>
+    <div class="container">
+        <img src="images/tesla.PNG" alt="Tesla Roadster" class="img-image">
+        <div class="overlay">
+            <div class="text">Hello World
+                <a class="button is-outlined is-rounded is-link">Visit site ></a>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+  <h1 class="title center">My Projects</h1>
+      <div class="columns center">
+              <div class="container">
+      <img src="images/Emoji-site.png" alt="Tesla Roadster" class="border img">
+      <div class="overlay">
+        <div class="text">Hello World
+            <a class="button is-outlined is-rounded is-link">Visit site ></a>
+        </div>
+        
+      </div>
+    </div>
+      <div class="container">
+          <img src="images/broke-App.png" alt="How broke are you app?" class="border img">
+          <div class="overlay">
+              <div class="text">Hello World
+                  <a class="button is-outlined is-rounded is-link">Visit site ></a>
+              </div>
+              
+            </div>
+        </div>
+  <div class="container">
+      <img src="images/tesla.PNG" alt="Tesla Roadster" class="border img">
+      <div class="overlay">
+          <div class="text">Hello World
+              <a class="button is-outlined is-rounded is-link">Visit site ></a>
+          </div>
+          
+        </div>
     </div>
   </div>
-  
-    <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" required /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form
-      
-      >
-    <script src="js/index.js"></script>
+</section>
 </body>
 
 </html>
