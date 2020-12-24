@@ -277,8 +277,6 @@ button:focus {
 /* skills */
 
 #skills {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -120px;
   border-radius: 1.5em;
   position: relative;
@@ -287,16 +285,14 @@ button:focus {
 }
 
 .grid {
-  margin-bottom: 2em;
-  justify-content: space-evenly;
-  margin: 1em;
-  /* align-items: center; */
+  display: flex;
+  flex-flow: column wrap;
+  margin: 1em 1em 2em 1em;
 }
 
 .cell {
   padding: .5em;
 }
-
 
 .cell p {
   line-height: 1.5;
@@ -386,7 +382,7 @@ button:focus {
 
 .social-icon-item {
   color: black;
-  padding-right: 1em;
+  padding: 0 1em;
 }
 
 .social-icon-list,
@@ -395,6 +391,7 @@ button:focus {
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 1em;
   margin: 0;
   object-fit: cover;
 }
@@ -434,7 +431,7 @@ button:focus {
   }
 
   .cell {
-    width: 45%;
+    width: 50%;
   }
 
   .cell-skills:last-child {
@@ -460,11 +457,16 @@ button:focus {
 }
 
 @media (min-width: 1000px){
+
+  .grid {
+    display: flex;
+  }
 .cell {
-  max-width: 30%;
+  max-width: 33%;
 }
   .cell-skills {
-    max-width: 30%;
+    max-width: 33%;
+    justify-content: space-evenly;
   }
 
   .cell-skills:nth-child(2) {
