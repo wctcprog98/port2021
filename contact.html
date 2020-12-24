@@ -5,81 +5,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/helpers.css">
-  <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
-  <section class="section" id="projects">
-    <h1 class="title center">My Projects</h1>
-        <div class="columns center">
-                <div class="container">
-        <img src="images/Emoji-site.png" alt="Tesla Roadster" class="img-image">
-        <div class="overlay">
-          <div class="text">Hello World
-              <a class="button is-outlined is-rounded is-link">Visit site ></a>
-          </div>
-          
-        </div>
-      </div>
-        <div class="container">
-            <img src="images/broke-App.png" alt="How broke are you app?" class="img-image">
-            <div class="overlay">
-                <div class="text">Hello World
-                    <a class="button is-outlined is-rounded is-link">Visit site ></a>
-                </div>
-                
-              </div>
-          </div>
-    <div class="container">
-        <img src="images/tesla.PNG" alt="Tesla Roadster" class="img-image">
-        <div class="overlay">
-            <div class="text">Hello World
-                <a class="button is-outlined is-rounded is-link">Visit site ></a>
-            </div>
-            
-          </div>
-      </div>
+  <div class="nav">
+    <img src="images/logo1.png" id="logo" alt="">
+    <div class="nav-contact">
+    <a href="index.html">
+    <i class="fas fa-lg fa-undo-alt blue"></i>
+  </a>
+    <a href="index.html">
+      <i class="fas fa-lg fa-times blue"></i>
+    </a>
+    
     </div>
-</section>
+</div>
 
-<section class="section" id="projects">
-  <h1 class="title center">My Projects</h1>
-      <div class="columns center">
-              <div class="container">
-      <img src="images/Emoji-site.png" alt="Tesla Roadster" class="border img">
-      <div class="overlay">
-        <div class="text">Hello World
-            <a class="button is-outlined is-rounded is-link">Visit site ></a>
-        </div>
-        
-      </div>
+
+<img src="images/avataaars.svg" class="contact-avatar" alt="picture of me as an avatar">
+<h1 class="title">Thanks for taking the time to reach out to me today. How can I help you today?</h1>
+ 
+
+  <form name="contact" method="POST" data-netlify="true" action="success.html">
+    <div class="wrapper">
+      <p>
+        <label>Name</label>   
+        <input type="text" name="name" placeholder=""/>
+      </p>
+      <p>
+        <label>Email</label>
+        <input type="email" name="email" required placeholder="email"/>
+      </p>
     </div>
-      <div class="container">
-          <img src="images/broke-App.png" alt="How broke are you app?" class="border img">
-          <div class="overlay">
-              <div class="text">Hello World
-                  <a class="button is-outlined is-rounded is-link">Visit site ></a>
-              </div>
-              
-            </div>
-        </div>
-  <div class="container">
-      <img src="images/tesla.PNG" alt="Tesla Roadster" class="border img">
-      <div class="overlay">
-          <div class="text">Hello World
-              <a class="button is-outlined is-rounded is-link">Visit site ></a>
-          </div>
-          
-        </div>
+
+
+    <div>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
     </div>
-  </div>
-</section>
+    <p>
+     <button type="submit" class="icon-btn">Send</button>
+    </p>
+  </form>
 </body>
 
 </html>

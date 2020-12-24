@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html.wf-loading * {
+  opacity: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,9 +14,38 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 300;
   text-align: center;
+}
+
+/* contact */
+.wrapper {
+display: flex;
+flex-flow: row wrap;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* /contact */
+
+textarea {
+  width: 600px;
+  height: 250px;
+  }
+
+  input {
+    width: 250px;
+  }
+
+/* success */
+
+.success {
+  position: relative;
+  top: 70%;
 }
 
 .img {
@@ -39,7 +72,6 @@ a:focus {
 h1,
 h2,
 h3 {
-  font-family: "lora", serif;
   font-weight: 400;
   margin-top: 0;
 }
@@ -52,11 +84,6 @@ ul {
   padding: 0;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.25;
-}
 h1,
 .subtitle {
   text-align: center;
@@ -104,6 +131,16 @@ button:focus {
   color: #7510f7;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 800;
+  font-size: 1.125em;
+}
+
+.icon-btn-white {
+  border: 2px solid #fff;
+  padding: .75em 1.5em;
+  border-radius: 2em;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
 }
 
 .icon-btn:hover,
@@ -112,19 +149,25 @@ button:focus {
   color: white;
 }
 
+.icon-btn-white:hover,
+.icon-btn-white:focus {
+  background: white;
+  color: #7510f7;
+}
+
 .title {
   font-family: 'Open Sans Condensed', sans-serif;
   margin-bottom: 0.5em;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 800;
   text-align: center;
 }
 
 .subtitle {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bolder;
+  font-weight: 700;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-top: 0;
   padding: 0 1em;
 }
@@ -133,6 +176,16 @@ button:focus {
   display: flex;
   flex-direction: column;
 }
+
+.white {
+  color: #fff;
+}
+/* Contact */
+.wrapper {
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 .content {
   order: 2;
@@ -148,6 +201,14 @@ button:focus {
   order: -1;
   margin-bottom: 1.5em;
   background: #7510f7;
+}
+
+.contact-avatar {
+  width: 100px;
+  height: 100%;
+  background: #7510f7;
+  border-radius: 3.5em;
+  margin-top: -100px;
 }
 
 /* Navigation */
@@ -176,9 +237,13 @@ button:focus {
   text-transform: uppercase;
   font-weight: 800;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1em;
   margin: 0.75em;
   color: #7510f7;
+}
+
+.nav-contact > * {
+  padding: 0 2em 0 0;
 }
 
 
@@ -200,11 +265,13 @@ button:focus {
 .nav-link:hover,
 .nav-link:focus {
   border-bottom: 2px solid #7510f7;
+  color: #7510f7;
 }
 
 .nav-link:focus:last-child,
 .nav-link:hover:last-child {
   border-bottom: 2px solid #7510f7;
+  color: white; 
 }
 
 /* skills */
@@ -212,19 +279,15 @@ button:focus {
 #skills {
   display: flex;
   flex-wrap: wrap;
-  margin: 1em;
   margin-top: -120px;
   border-radius: 1.5em;
   position: relative;
-  z-index: 1;
   background-color: white;
   border: 1px solid #7510f7;
 }
 
 .grid {
   margin-bottom: 2em;
-  display: flex;
-  flex-flow: column wrap;
   justify-content: space-evenly;
   margin: 1em;
   /* align-items: center; */
@@ -234,12 +297,11 @@ button:focus {
   padding: .5em;
 }
 
-.cell-skills * > {
-  padding: 0 1em;
-}
 
 .cell p {
   line-height: 1.5;
+  padding: 1em 0;
+  font-weight: 300;
 }
 
 .cell-skills {
@@ -283,11 +345,11 @@ button:focus {
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  /* /* -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%); 
   text-align: center;
 } 
 
@@ -320,6 +382,11 @@ button:focus {
 
 .computer-image {
   order: 0;
+}
+
+.social-icon-item {
+  color: black;
+  padding-right: 1em;
 }
 
 .social-icon-list,
