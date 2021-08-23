@@ -69,7 +69,7 @@ form {
 
 .img {
   display: block;
-  width: 400px; 
+  width: 10px; 
   height: 275px;
   object-fit: cover;
   border: 2px solid lightgrey;
@@ -405,6 +405,14 @@ button:focus {
   object-fit: cover;
 }
 
+#project {
+  width: 100%;
+  height: 300px;
+  order: 1;
+  border: 1px solid #7510f7;
+  border-radius: 1.25em;
+  object-fit: contain;
+}
 .computer-image {
   order: 0;
 }
@@ -516,10 +524,13 @@ button:focus {
   }
   .nav{
     justify-content: space-between;
+    height: 150px;
   }
 
   #logo {
     margin-left: 1em;
+    height: auto;
+    object-fit: cover;
   }
   
 }
